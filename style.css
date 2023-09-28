@@ -1,59 +1,213 @@
 nav {
-    position: sticky;
-    top: 0px;
-    background-color: white;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 2;
 }
 .vertical-line {
-    border-left: 2px solid #f2f2f2;
-    height: 60px;
-  }
-  .nav-delivery > h5 {
-    font-weight: 900;
-    margin-top: 10px;
-  }
-  .nav-delivery > p {
-    font-size: 13px;
-  }
-  #nav-search {
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    border: 1px solid #f2f2f2;
-    padding-inline: 10px;
-  }
-  #nav-search > input {
-    border: none;
-    width: 40vw;
-    height: 40px;
-    background-color: transparent;
-  }
-  .my-cart {
-    border-radius: 10px !important;
-    font-weight: 600 !important;
-    
-  }
-  #hero-section {
-display: flex;
-justify-content: center;
-
-  }
+  border-left: 2px solid #f2f2f2;
+  height: 60px;
+}
+.nav-delivery > h5 {
+  font-weight: 900;
+  margin-top: 10px;
+}
+.nav-delivery > p {
+  font-size: 13px;
+}
+#nav-search {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  border: 1px solid #f2f2f2;
+  padding-inline: 10px;
+}
+#nav-search > input {
+  border: none;
+  width: 40vw;
+  height: 40px;
+  background-color: transparent;
+}
+.my-cart {
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+}
+#hero-section {
+  display: flex;
+  justify-content: center;
+}
 #categories-1 {
-    display: flex;
-    flex-wrap: wrap;
-    padding-inline: 3vw;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 3vw;
+  justify-content: space-around;
 }
 .Scroll-container {
-    width: 93vw;
-    margin: auto;
+  width: 93vw;
+  margin: auto;
 }
 .list {
-    white-space: nowrap;
-    overflow-x: scroll;
+  white-space: nowrap;
+  overflow-x: scroll;
 }
 .list::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-.list>img {
-    display: inline-block;
-    margin: 10px;
+.list > img {
+  display: inline-block;
+  margin: 10px;
+}
+.category {
+  width: 93vw;
+  margin: auto;
+}
+.my-card {
+    display: inline-block !important;
+  width: 220px;
+  box-sizing: border-box;
+  border-radius: 15px !important;
+  white-space: wrap;
+  margin-inline: 10px;
+}
+.my-card > img {
+  display: inline-block;
+  margin: auto;
+}
+.time {
+  font-weight: 700;
+  font-size: 9px;
+  width: fit-content;
+  padding: 6px;
+  border-radius: 10px;
+}
+.product-wight {
+  font-size: 13px;
+  color: #666666;
+}
+.row-3 > p {
+  margin: 0px;
+}
+.my-tag {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 40px;
+    background-color: #528cee;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 13px;
+}
+footer {
+    width: 80vw;
+    margin: auto;
+}
+#my-footer-r3 {
+    text-align: justify;
+    color: #666666;
+    font-size: 15px;
+}
+#my-footer-r2 {
+    text-align: justify;
+    color: #666666;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#footer-r2-col1 {
+    flex: 1;
+    padding-inline: 10px;
+}
+#footer-r2-col2 {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+    height: auto;
+}
+#footer-r2-col2>h6 {
+    color: #666666;
+    margin: 0px;
+}
+.some-box {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #213a50;
+    color: #f2f2f2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer-r2-col3 {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-icon{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    font-size: 30px;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+}
+.social-icon:hover {
+    color: #213a50;
+    background-color: #fbcb45;
+    box-shadow: 5px 5px 10px black;
+}
+#my-footer-r1 {
+    display: flex;
+    margin-top: 30px;
+}
+#footer-T1 {
+    flex: 2;
+    width: 100%;
+}
+#footer-T2 {
+    flex: 3;
+}
+table {
+    width: 100%;
+}
+td {
+    width: 33%;
+    color:#666666;
+   line-height: 30px;
+   
+}
+td:hover{
+    width: 33%;
+    color:#666666;
+   line-height: 30px;
+   text-decoration:underline;
+   color: red;
+   cursor: pointer;
+} 
+@media screen (max-width: 400px) {
+    #hero-section{
+        display: none !important;
+    }
+    #my-footer-r1{
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: auto;
+    }
+    #footer-T1 #footer-T2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    td {
+        text-align: center;
+    }
 }
