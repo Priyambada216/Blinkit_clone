@@ -1,6 +1,7 @@
 nav {
     position: sticky;
     top: 0px;
+    background-color: white;
 }
 .vertical-line {
     border-left: 2px solid #f2f2f2;
@@ -38,6 +39,21 @@ justify-content: center;
 #categories-1 {
     display: flex;
     flex-wrap: wrap;
-    padding-inline: 3.5vw;
+    padding-inline: 3vw;
     justify-content: space-around;
+}
+.Scroll-container {
+    width: 93vw;
+    margin: auto;
+}
+.list {
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.list::-webkit-scrollbar {
+    display: none;
+}
+.list>img {
+    display: inline-block;
+    margin: 10px;
 }
