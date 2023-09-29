@@ -193,21 +193,46 @@ td:hover{
    color: red;
    cursor: pointer;
 } 
-@media screen (max-width: 400px) {
-    #hero-section{
-        display: none !important;
-    }
-    #my-footer-r1{
-        flex-direction: column !important;
-        align-items: center !important;
-        margin: auto;
-    }
-    #footer-T1 #footer-T2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    td {
-        text-align: center;
-    }
+@media screen and (max-width:480px){
+  #hero-section {
+    display: none !important;
+  }
+  nav,#my-footer-r1 {
+    flex-direction: column !important;
+    align-items: center !important;
+    margin: auto;
+  }
+  #my-footer-r2, #footer-T1, #footer-T2, #footer-r2-col2, #my-footer-r3 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 20px !important;
+
+  }
+  td {
+    text-align: center !important;
+    padding-inline: 20px;
+    font-size: 12px;
+  }
+  .some-box {
+    margin-top: 10px;
+  }
+  #footer-r2-col3 {
+    justify-content: space-between;
+    width: 90vw;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .vertical-line {
+    display: none;
+  }
+  #nav-search {
+    width: 90vw;
+  }
+  nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: static;
+  }
+
 }
